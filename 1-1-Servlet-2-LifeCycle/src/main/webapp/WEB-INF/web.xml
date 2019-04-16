@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <!-- 配置Servlet -->
+  <servlet>  <!-- 注册Servlet -->
+    <servlet-name>demo1</servlet-name>  <!-- Servlet名称，当前 xml 中唯一 -->
+    <servlet-class>cn.ys.servlet.ServletDemo1</servlet-class>   <!-- Servlet 实现类的全限定类名 -->
+
+    <!-- 指定Servlet的创建时机
+        1.第一次被访问时，创建
+            * <load-on-startup>的值为负数
+        2.在服务器启动时，创建
+            * <load-on-startup>的值为0或正整数
+    -->
+    <load-on-startup>-5</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>  <!-- 给注册的 Servlet 添加映射路径 -->
+    <servlet-name>demo1</servlet-name>  <!-- 已经注册的 Servlet 名称。注意：必须与注册的名称一致 -->
+    <url-pattern>/demo1</url-pattern>   <!-- 访问路径。要求：必须以 / 开头 -->
+  </servlet-mapping>
+</web-app>
