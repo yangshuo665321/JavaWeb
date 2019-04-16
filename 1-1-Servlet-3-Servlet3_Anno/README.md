@@ -1,5 +1,5 @@
 # Servlet 3.0：注解配置
-### 好处：
+## 好处：
 支持注解配置。可以不需要web.xml了。
 
 依赖
@@ -57,7 +57,7 @@ public class ServletDemo implements Servlet {
 ```
 
 **测试：**
-启动 Tomcat，浏览器访问：http://localhost:8080/demo
+启动 Tomcat，浏览器访问：http://localhost:8082/demo
 
 ### @WebServlet 注解
 
@@ -117,8 +117,6 @@ public @interface WebServlet {
 			1. 定义类继承HttpServlet
 			2. 复写doGet/doPost方法
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190122201204479.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjExMjYzNQ==,size_16,color_FFFFFF,t_70)
-
 # Servlet 相关配置
 ## urlpartten ：Servlet访问路径
 1. 一个Servlet可以定义多个访问路径 ： @WebServlet({"/d4","/dd4","/ddd4"})
@@ -163,7 +161,12 @@ public class ServletDemo4 extends HttpServlet {
 ```
 
 ### 欢迎页面
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190122205004452.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjExMjYzNQ==,size_16,color_FFFFFF,t_70)
+```xml
+<welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+  <welcome-file>index.html</welcome-file>
+</welcome-file-list>
+```
 
 ## ServletContext 对象
 ### 什么是 ServletContext 对象

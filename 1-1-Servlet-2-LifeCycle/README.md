@@ -48,7 +48,7 @@ destroy() 方法**只会被调用一次**，在 Servlet 生命周期结束时被
 
 只有 **服务器正常关闭**时，才会执行destroy方法，destroy方法在Servlet被销毁之前执行，一般用于释放资源。
 
-在调用 destroy() 方法之后，servlet 对象被标记为垃圾回收。destroy 方法定义如下所示：
+在调用 destroy() 方法之后，servlet 对象被标记为垃圾回收。
 
 ## 架构图
 下图显示了一个典型的 Servlet 生命周期方案。

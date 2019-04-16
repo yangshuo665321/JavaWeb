@@ -13,7 +13,7 @@ public class ServletDemo1 implements Servlet {
      */
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        System.out.println("初始化方法执行......");
     }
 
     /**
@@ -36,7 +36,7 @@ public class ServletDemo1 implements Servlet {
      */
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("Hello Servlet...");
+        System.out.println("Hello Servlet......");
     }
 
     /**
@@ -54,7 +54,7 @@ public class ServletDemo1 implements Servlet {
      */
     @Override
     public void destroy() {
-
+        System.out.println("销毁方法执行......");
     }
 
 }

@@ -18,7 +18,7 @@ public class ServletDemo implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("Servlet3.0来了.....");
+        System.out.println("Servlet3.0来了......");
     }
 
     @Override

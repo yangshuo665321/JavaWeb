@@ -16,10 +16,6 @@ Java Servlet 是 `运行在 Web 服务器或应用服务器上的程序` ，它�
 - 处理请求
 - 完成请求
 
-## Servlet 架构
-下图显示了 Servlet 在 Web 应用程序中的位置。
-![在这里插入图片描述](assets/2.png)
-
 ## Servlet 任务
 Servlet 执行以下主要任务：
 - 读取客户端（浏览器）发送的**显式的数据**。这包括网页上的 HTML 表单，或者也可以是来自 applet 或自定义的 HTTP 客户端程序的表单。
